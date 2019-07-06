@@ -5,7 +5,7 @@ package com.chengxi.pattern.principle.f02_intfsegregation;
  */
 public class Segretion01 {
     public static void main(String[] args) {
-
+        // 接口隔离原则
     }
 }
 
