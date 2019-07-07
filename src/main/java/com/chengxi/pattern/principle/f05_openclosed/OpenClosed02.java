@@ -11,15 +11,18 @@ public class OpenClosed02 {
         grapicEditor.drawShape(new Triangle02());
     }
 }
+
 class GrapicEditor02 {
     public void drawShape(Shape02 s) {
         s.draw();
     }
 
 }
+
 // Shape类，基类
 abstract class Shape02 {
     int type;
+
     public abstract void draw();
 }
 
@@ -28,6 +31,7 @@ class Rectangle02 extends Shape02 {
     Rectangle02() {
         super.type = 1;
     }
+
     @Override
     public void draw() {
         System.out.println("绘制矩形");
@@ -48,9 +52,10 @@ class Circle02 extends Shape02 {
 
 // 新增一个绘制三形的功能
 class Triangle02 extends Shape02 {
-    Triangle02 () {
+    Triangle02() {
         super.type = 3;
     }
+
     @Override
     public void draw() {
         System.out.println("绘制三角形");

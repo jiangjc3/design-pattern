@@ -18,13 +18,13 @@ public class SingleDuty02 {
  * 2. 但是有的时候这样做改动可能会很大， 因为会将类分解，同时修改客户端
  * 3. 所以如果是遇到这种功能比较简单的类，有时也可以改成方法级别单一职责的类型
  */
-class BasketballStar{
+class BasketballStar {
     public void play(String name) {
         System.out.println(name + "在NBA打篮球。。。");
     }
 }
 
-class ComedyStar{
+class ComedyStar {
     public void play(String name) {
         System.out.println(name + "在舞台上演小品。。。");
     }

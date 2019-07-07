@@ -21,6 +21,7 @@ class Email02 implements Receiver {
         return "电子邮件信息： HELLO WORLD";
     }
 }
+
 //增加短信
 class Message implements Receiver {
 
@@ -29,7 +30,7 @@ class Message implements Receiver {
     }
 }
 
-class Person02{
+class Person02 {
     public void receive(Receiver receiver) {
         System.out.println(receiver.getInfo());
     }

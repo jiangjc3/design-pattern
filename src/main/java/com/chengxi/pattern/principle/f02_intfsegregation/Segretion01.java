@@ -10,14 +10,17 @@ public class Segretion01 {
 }
 
 // 接口
-interface MyIntf{
+interface MyIntf {
     void operation1();
+
     void operation2();
+
     void operation3();
+
     void operation4();
 }
 
-class B implements MyIntf{
+class B implements MyIntf {
 
     public void operation1() {
         System.out.println("B 实现了operation1");
@@ -37,7 +40,7 @@ class B implements MyIntf{
 }
 
 
-class D implements MyIntf{
+class D implements MyIntf {
 
     public void operation1() {
         System.out.println("D 实现了operation1");
@@ -55,14 +58,17 @@ class D implements MyIntf{
         System.out.println("D 实现了operation4");
     }
 }
+
 // A类通过接口MyIntf 依赖（使用）B类，但是只会用到1 2 3方法
 class A {
     public void depend1(MyIntf myIntf) {
         myIntf.operation1();
     }
+
     public void depend2(MyIntf myIntf) {
         myIntf.operation2();
     }
+
     public void depend3(MyIntf myIntf) {
         myIntf.operation3();
     }
@@ -73,9 +79,11 @@ class C {
     public void depend1(MyIntf myIntf) {
         myIntf.operation1();
     }
+
     public void depend2(MyIntf myIntf) {
         myIntf.operation2();
     }
+
     public void depend4(MyIntf myIntf) {
         myIntf.operation4();
     }

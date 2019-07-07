@@ -17,6 +17,7 @@ public class Substitution02 {
         System.out.println("10 - 3 = " + b.func3(10, 3));
     }
 }
+
 class Base {
     // 把更加基础的方法和成员写到Base类
 }
@@ -36,9 +37,11 @@ class B2 extends Base {
     public int func1(int a, int b) {
         return a + b;
     }
+
     public int func2(int a, int b) {
         return func1(a, b) + 1;
     }
+
     // 我们仍然想用A类的方法
     public int func3(int a, int b) {
         return a2.func1(a, b);

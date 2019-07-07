@@ -12,14 +12,15 @@ public class Inversion01 {
         person.receive(new Email());
     }
 }
+
 // 完成Person接收消息的功能
-class Email{
+class Email {
     public String getInfo() {
         return "电子邮件信息： HELLO WORLD";
     }
 }
 
-class Person{
+class Person {
     public void receive(Email email) {
         System.out.println(email.getInfo());
     }

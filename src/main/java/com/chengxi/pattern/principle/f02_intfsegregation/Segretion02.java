@@ -18,20 +18,21 @@ public class Segretion02 {
 }
 
 // 接口
-interface MyIntf1{
+interface MyIntf1 {
     void operation1();
+
     void operation2();
 }
 
-interface MyIntf2{
+interface MyIntf2 {
     void operation3();
 }
 
-interface MyIntf3{
+interface MyIntf3 {
     void operation4();
 }
 
-class B2 implements MyIntf1, MyIntf2{
+class B2 implements MyIntf1, MyIntf2 {
 
     public void operation1() {
         System.out.println("B2 实现了operation1");
@@ -47,7 +48,7 @@ class B2 implements MyIntf1, MyIntf2{
 }
 
 
-class D2 implements MyIntf1, MyIntf3{
+class D2 implements MyIntf1, MyIntf3 {
 
     public void operation1() {
         System.out.println("D2 实现了operation1");
@@ -68,6 +69,7 @@ class A2 {
         myIntf.operation1();
         myIntf.operation2();
     }
+
     public void depend2(MyIntf2 myIntf) {
         myIntf.operation3();
     }
@@ -79,6 +81,7 @@ class C2 {
         myIntf.operation1();
         myIntf.operation2();
     }
+
     public void depend3(MyIntf3 myIntf) {
         myIntf.operation4();
     }
